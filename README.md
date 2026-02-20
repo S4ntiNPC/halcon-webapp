@@ -1,19 +1,19 @@
-# 🦅 Halcón - Sistema de Gestión de Pedidos
+# Halcón - Sistema de Gestión de Pedidos - Evidencia 1
 
 ![Estado del Proyecto](https://img.shields.io/badge/Estado-En_Desarrollo-green)
 ![Versión](https://img.shields.io/badge/Versi%C3%B3n-1.0.0-blue)
 
-## 📖 Descripción del Proyecto
+##  Descripción del Proyecto
 
 "Halcón" es una aplicación web diseñada para automatizar y transparentar los procesos internos de distribución de materiales de construcción. El sistema proporciona una fuente única de verdad para el ciclo de vida de los pedidos, permitiendo a los clientes rastrear sus entregas en tiempo real y al personal interno gestionar la logística mediante un sistema basado en roles.
 
-### 🎯 Objetivos Principales
+###  Objetivos Principales
 * **Para los Clientes:** Proveer una interfaz pública para consultar el estado de sus pedidos (con número de cliente y factura) y visualizar la evidencia fotográfica de la entrega.
 * **Para la Empresa:** Administrar el flujo de trabajo de los pedidos a través de departamentos específicos (Ventas, Compras, Almacén y Ruta) utilizando un Dashboard Administrativo seguro.
 
 ---
 
-## 🛠️ Tecnologías Propuestas
+##  Tecnologías Propuestas
 
 * **Frontend:** React, Vite, Tailwind CSS
 * **Backend:** Java 
@@ -23,7 +23,7 @@
 
 ---
 
-## 👥 Roles y Permisos (RBAC)
+##  Roles y Permisos (RBAC)
 
 El sistema cuenta con un modelo de Control de Acceso Basado en Roles para garantizar la seguridad y separación de responsabilidades:
 
@@ -35,16 +35,15 @@ El sistema cuenta con un modelo de Control de Acceso Basado en Roles para garant
 
 ---
 
-## 📦 Ciclo de Vida del Pedido
+##  Ciclo de Vida del Pedido
 
 El sistema impone un flujo estricto de estados para cada pedido:
 1. `Ordenado` ➡️ 2. `En Proceso` ➡️ 3. `En Ruta` ➡️ 4. `Entregado`
 
-*Nota: El sistema implementa "Borrado Lógico" (Soft Delete) para asegurar que ningún registro de pedido sea eliminado permanentemente de la base de datos, permitiendo su restauración si es necesario.*
 
 ---
 
-## 🚀 Instalación y Configuración Local
+##  Instalación y Configuración Local
 
 Sigue estos pasos para levantar el entorno de desarrollo en tu máquina local:
 
