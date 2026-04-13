@@ -59,3 +59,19 @@ Sigue estos pasos para levantar el entorno de desarrollo en tu máquina local:
    ```bash
    git clone [https://github.com/TU-USUARIO/halcon-webapp.git](https://github.com/TU-USUARIO/halcon-webapp.git)
    cd halcon-webapp
+
+   
+   
+## Evidencia 2 - Funcionalidad Lógica
+Se implementó el backend del sistema utilizando Laravel:
+- **Modelos y Migraciones:** Creación de tablas para Usuarios, Roles, Órdenes y Evidencias.
+- **Factories/Seeders:** Se poblaron datos de prueba y catálogo de roles.
+- **Vistas y Controladores:** Se creó el CRUD de usuarios y pedidos, incluyendo borrado lógico (Soft Deletes) y subida de fotografías.
+- **Seguridad:** Se implementó Laravel Breeze para proteger el dashboard administrativo.
+
+**Instrucciones para correr en local:**
+1. `composer install` y `npm install`
+2. Configurar el archivo `.env`
+3. `php artisan migrate:fresh --seed`
+4. `php artisan storage:link` (Para habilitar las fotos)
+5. `php artisan serve`
